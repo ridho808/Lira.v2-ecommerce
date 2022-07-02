@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+.Logo{
+  font-family: 'Vidaloka', serif;
+}
+.bg-white{
+    transition: all ease-in-out 0.3s;
+}
+.bg-transparent{
+    transition: all ease-in 0.3s;
+}
