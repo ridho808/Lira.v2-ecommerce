@@ -7,7 +7,7 @@ class Navbar extends Component{
         super(props);
         this.state = {
             Navbar : false,
-            Scrolly : Boolean
+            Scrolly : false
         }
         this.HandleNav = this.HandleNav.bind(this);
     }
@@ -18,7 +18,6 @@ class Navbar extends Component{
     }
     componentDidMount(){
         window.addEventListener("scroll",()=>{
-            console.log(window.scrollY)
             if(window.scrollY >= 1){
                 this.setState({Scrolly : true})
             }else if(window.scrollY === 0){
