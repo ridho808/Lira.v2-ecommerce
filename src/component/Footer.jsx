@@ -1,6 +1,14 @@
 import React,{Component} from "react";
 import {Link} from 'react-router-dom';
 class Footer extends Component{
+    constructor(props){
+        super(props);
+        this.BtnSubmit= this.BtnSubmit.bind(this)
+    }
+    BtnSubmit(e){
+        alert("Hello I'm Doolean🖐,thanks for coming")
+        e.preventDefault();
+    }
     render(){
         return(
             <>
@@ -25,7 +33,7 @@ class Footer extends Component{
                                 <input type="email" className="rounded-[10px]"/>
                                 <label className="font-bold">Feedback</label>
                                 <input type="text" className="h-[80px] rounded-[10px]"/>
-                                <button className="mt-3 p-2 w-[100px] text-white rounded-[10px] transition ease-in-out delay-150 bg-neutral-900 hover:-translate-y-1 hover:scale-110 hover:bg-neutral-700 duration-300">SUBMIT</button>
+                                <button onClick={this.BtnSubmit} className="mt-3 p-2 w-[100px] text-white rounded-[10px] transition ease-in-out delay-150 bg-neutral-900 hover:-translate-y-1 hover:scale-110 hover:bg-neutral-700 duration-300">SUBMIT</button>
                             </form>
                         </div>
                     </div>

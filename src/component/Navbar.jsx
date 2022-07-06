@@ -41,7 +41,7 @@ class Navbar extends Component{
                                 <Link to={'/'}>HOME</Link>
                             </li>
                             <li className="text-md p-4 hover:font-bold">
-                                <Link to={'/'}>ABOUT</Link>
+                                <Link to={'/About'}>ABOUT</Link>
                             </li>
                         </ul>
                         <button onClick={this.HandleNav} className="flex sm:hidden">
@@ -54,7 +54,7 @@ class Navbar extends Component{
                                 <Link to={'/'}>HOME</Link>
                             </li>
                             <li className="text-md p-4 hover:font-bold">
-                                <Link to={'/'}>ABOUT</Link>
+                                <Link to={'/About'}>ABOUT</Link>
                             </li>
                         </ul>
                     </div>

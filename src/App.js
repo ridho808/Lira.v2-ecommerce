@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import {Home} from './pages/index.jsx'
+import {Home,About} from './pages/index.jsx'
 import {Helmet} from "react-helmet";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -19,6 +19,8 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path='*' element={<Home />}></Route>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/About' element={<About />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
